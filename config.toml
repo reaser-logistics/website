@@ -1,0 +1,49 @@
+baseURL = "https://reaser-logistics.netlify.app/"
+title = "Reaser Logistics LLC"
+defaultContentLanguage = "en"
+
+theme = "hugo-scroll"
+disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
+# enableGitInfo = true
+enableEmoji = true
+
+[params]
+    title = "Reaser Logistics LCC"
+    description = "Professional Sign Language Interpreters"
+    copyright = "© 2024 Reaser Logistics LLC"
+
+    favicon = "images/favicon.png"
+    images = [ "photos/wv-state-legislature.jpg" ]
+
+    title_guard = false
+    invertSectionColors = false
+
+    language_menu = false
+    show_current_lang = false
+
+    hidedesignbyline = true
+
+    [params.footer]
+        showContactIcons = false
+        showFooterLinks = false
+
+    [params.meta]
+        keywords = "asl, american sign language, sign language, sign language interpreter, sign language interpreting, joshua reaser, josh reaser, reaser, reaser logistics, morgantown, west virginia, wv"
+
+    [[params.contacts]]
+        label = "email"
+        value = "josh@reaserlogistics.com"
+        url = "mailto:josh@reaserlogistics.com"
+        icon = "fa fa-envelope"
+
+    # [[params.contacts]]
+    #     label = "phone"
+    #     value = "+1 555 555 5555"
+    #     url = "tel:+1 555 555 5555"
+    #     icon = "fa fa-phone"
+
+[languages]
+    [languages.en]
+        weight = 10
+        languageName = "English"
+        contentDir = "content/en"

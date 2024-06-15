@@ -1,0 +1,28 @@
+<style>
+    .post {
+        hyphens: manual !important;
+    }
+
+    figcaption {
+        color: var(--section-uni-quote);
+        font-style: italic;
+    }
+
+    textarea {
+        width: 100%;
+    }
+</style>
+
+{{ with resources.Get "images/favicon.ico" }}
+    <link rel="shortcut icon" href="{{ .RelPermalink }}" />
+{{ end }}
+
+{{ range seq 9 4 }}
+    {{ $size := pow 2 . }}
+    {{ $file := replace "images/favicon-##x##.png" "##" $size }}
+    {{ with resources.Get $file }}
+        <link rel="icon" type="{{ .MediaType.Type }}" sizes="{{- $size -}}x{{- $size -}}" href="{{ .RelPermalink }}" />
+    {{ end }}
+{{ end }}
+
+<meta name="theme-color" content="#f99f20">
