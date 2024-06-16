@@ -9,7 +9,7 @@ For service requests or other inquiries, please send us your contact details and
 {{<rawhtml>}}
     <form name="Reaser-Logistics-contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" >
         <p class="hidden">
-            <label>Don't fill this out if you’re human: <input name="bot-field" /></label>
+            <label>Leave this blank if you're human: <input name="bot-field" /></label>
         </p>
         <p>
             <label>Full Name:<br/>

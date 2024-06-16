@@ -1,14 +1,66 @@
 <style>
+    body, .blog-description, a.btn, #site-languages .btn-lang {
+        font-family: "Open Sans", sans-serif !important;
+    }
+
+    #blog-logo {
+        filter: drop-shadow(var(--cover-logo-shadow));
+    }
+
     .post {
         hyphens: manual !important;
     }
 
-    figcaption {
-        color: var(--section-uni-quote);
+    .dark blockquote p {
+        color: var(--palette-white-shade);
+    }
+
+    figcaption p {
         font-style: italic;
+        margin-top: auto;
+        text-align: center;
+    }
+
+    input:not([type="hidden"]),
+    textarea {
+        background-color: var(--palette-white-shade);
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border: none;
+        color: var(--section-light-text-color);
+        display: inline-block;
+        padding: 10px 20px 10px 20px;
+
+        .dark & {
+            background-color: var(--section-light-bg-color);
+            color: var(--section-light-text-color);
+        }
+    }
+
+    button[type="submit"] {
+        background-color: var(--palette-secondary);
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border: none;
+        color: var(--palette-white);
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all ease .3s;
+
+        &:hover {
+            background-color: var(--palette-secondary-tint);
+        }
     }
 
     textarea {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         width: 100%;
     }
 </style>
@@ -25,4 +77,4 @@
     {{ end }}
 {{ end }}
 
-<meta name="theme-color" content="#f99f20">
+<meta name="theme-color" content="#ea6b22" />

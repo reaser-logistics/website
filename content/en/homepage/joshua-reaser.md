@@ -1,11 +1,10 @@
 ---
 title: "Joshua Reaser"
-weight: 21
+weight: 25
 ---
 
 {{<
     figure src="/photos/wv-state-legislature.jpg"
-    alt="Joshua Reaser interpreting at the West Virginia state legislature"
     caption="Joshua Reaser interpreting at the West Virginia state legislature"
 >}}
 
@@ -17,4 +16,4 @@ weight: 21
 
 ---
 
-{{<icon class="fa fa-vcard-o">}} [Biography, Resume, and Contact](https://joshuareaser.com)
+{{<extlink icon="fa fa-vcard-o" text="Biography / Resume / Contact" href="https://joshuareaser.com">}}

@@ -1,30 +1,32 @@
+@import "./palette.scss";
+
 :root {
-    --cover-text-color: white;
-
-    --highlight: var(--section-dark-bg-color);
-    --highlight-contrast: var(--cover-text-color);
-    --highlight-inverse: var(--cover-text-color);
-    --highlight-inverse-contrast: var(--section-dark-bg-color);
-
-    --cover-title-text-shadow: #293f58 0px 0px 7px;
+    --cover-text-color: var(--palette-white);
+    --cover-logo-shadow: var(--palette-white) 0px 0px 7px;
+    --cover-title-text-shadow: var(--palette-secondary) 0px 0px 7px;
     --cover-title-and-description-guard-bg-color: rgba(0, 0, 0, 0.333);
 
-    --sticky-menu-text-color: #f99f20;
+    --highlight: var(--palette-primary);
+    --highlight-contrast: var(--palette-white);
+    --highlight-inverse: var(--palette-primary-tint);
+    --highlight-inverse-contrast: var(--palette-black);
 
-    --section-light-text-color: black;
-    --section-light-bg-color: white;
+    --sticky-menu-text-color: var(--palette-primary-tint);
 
-    --section-dark-text-color: var(--section-light-bg-color);
-    --section-dark-bg-color: #ea6b22;
+    --section-light-text-color: var(--palette-black);
+    --section-light-bg-color: var(--palette-white);
 
-    --section-uni-quote: grey;
-    --section-uni-code-bg-color: var(--section-light-bg-color);
+    --section-dark-text-color: var(--palette-white);
+    --section-dark-bg-color: var(--palette-primary);
+
+    --section-uni-quote: var(--palette-grey);
+    --section-uni-code-bg-color: var(--palette-white-shade);
 
     --single-page-text-color: var(--section-light-text-color);
     --single-page-bg-color: var(--section-light-bg-color);
 
-    --footer-color-background: #293f58;
-    --footer-color: grey;
+    --footer-color: var(--palette-grey);
+    --footer-color-background: var(--palette-secondary);
 
     --ul-li-icon: fa-signing;
 }
